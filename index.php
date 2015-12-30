@@ -19,7 +19,8 @@
 <?php
 //phpinfo();
 // Azure Data Lake
-echo "Hello World";
+//echo "Hello World";
+echo "I am here on Azure Website.";
 ?>
 
 
