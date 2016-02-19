@@ -35,20 +35,6 @@
 
 */
 
-try{
-	$val=9;
-	for($i=$val;$i<10;$i++){
-	 $tsql1 = "insert into [dbo].nowfloats (FPTag ,IP ,RequestHeader ,RequestType ,City ,State ,Country,CreatedOn ,URL ) values  ('RENTORENT','66.249.71.13','Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)','NULL', 'Coldwater','NULL','United States',GETDATE()".$i.",'NULL');";
-        $stmt1 = sqlsrv_query($conn, $tsql1);
-	}
-
-
-}
-    catch(Exception $e)
-    {
-        echo("Error!");
-    }
-
 /*
 
   try
