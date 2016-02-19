@@ -53,7 +53,8 @@ try{
         if ($getProducts == FALSE)
             die(FormatErrors(sqlsrv_errors()));
         $productCount = 0;
-        while($row = sqlsrv_fetch_array($getProducts, SQLSRV_FETCH_ASSOC))
+/*
+		while($row = sqlsrv_fetch_array($getProducts, SQLSRV_FETCH_ASSOC))
         {
             echo($row['FPTag']);
             echo($row['IP']);
@@ -65,9 +66,11 @@ try{
             echo($row['CreatedOn']->format('Y-m-d H:i:s'));
             echo($row['URL']);
             echo($row['ID']);
-            echo("<br/>");
+            //echo("<br/>");
             $productCount++;
         }
+*/
+		echo "Insert Success in nowfloatsarchive !!" ;
         sqlsrv_free_stmt($getProducts);
         sqlsrv_close($conn);
     }  catch(Exception $e)
